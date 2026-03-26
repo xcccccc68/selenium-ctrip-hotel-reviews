@@ -43,7 +43,7 @@ class HotelCommentCrawler:
                 # 直接使用星级数字
                 star_code = f"_{star_rating}"
             filename = f"{city_code}_{hotel_type_code}{star_code}_comments.csv"
-            self.output_file = f"./携程/hotel_comments/{filename}"
+            self.output_file = f"./hotel_comments/{filename}"
         
         self.driver = self._init_driver(self.headless)
         self.comment_data = []  # 存储所有评论数据
