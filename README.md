@@ -11,7 +11,6 @@
 ## 项目结构
 
 ```
-携程/
 ├── config.py          # 配置文件
 ├── get_hotels.py      # 酒店列表爬虫
 ├── get_comments.py    # 酒店评论爬虫
