@@ -41,7 +41,7 @@ class HotelListCrawler:
                 # 直接使用星级数字
                 star_code = f"_{star_rating}"
             filename = f"{city_code}_{hotel_type_code}{star_code}.csv"
-            self.output_file = f"./携程/hotel_lists/{filename}"
+            self.output_file = f"./hotel_lists/{filename}"
         
         self.driver = self._init_driver(self.headless)
         self.hotel_data = []  # 存储所有酒店数据
