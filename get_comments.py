@@ -530,7 +530,7 @@ if __name__ == '__main__':
     hotel_type_code = config.HOTEL_TYPE_CODE_MAP.get(hotel_type, hotel_type.lower())
     star_code = f"_{star_rating}" if star_rating else ""
     input_filename = f"{city_code}_{hotel_type_code}{star_code}.csv"
-    input_file = f"./携程/hotel_lists/{input_filename}"
+    input_file = f"./hotel_lists/{input_filename}"
     
     # 创建爬虫实例（传递参数以生成正确的文件名）
     crawler = HotelCommentCrawler(
